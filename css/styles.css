@@ -634,6 +634,7 @@ img {
 }
 /*  footer-label-email */
 .footer-email {
+  display: flex;
   margin-left: 93px;
   width: 100%;
 }
@@ -654,26 +655,28 @@ img {
   padding-bottom: 15px;
   padding-right: 295px;
   border: 1px solid rgba(255, 255, 255, 0.3);
-  background-repeat: 4px;
+  border-radius: 4px;
+  background-color: var(--footer-background-color);
 }
 .label-btn {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  width: 200px;
+  height: 50px;
   background-color: var(--web-color);
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.06em;
   color: var(--nav-text-color);
-  padding-left: 29px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-right: 28px;
+  margin-top: 35px;
+  margin-left: 15px;
 }
 .label-btn-svg {
-  width: 100%;
-  height: 100%;
-  fill: var(--nav-text-color);
   margin-left: 10px;
+  fill: var(--nav-text-color);
 }
 /* footer flex */
 .footer-contacts {
