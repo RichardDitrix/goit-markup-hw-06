@@ -685,6 +685,7 @@ img {
 .footer-contacts {
   margin-top: 20px;
 }
+
 .footer-items:not(:last-child) {
   margin-bottom: 10px;
 }
