@@ -635,8 +635,8 @@ img {
 /*  footer-label-email */
 .footer-email {
   display: flex;
+  align-items: end;
   margin-left: 93px;
-  width: 100%;
 }
 .footer-label {
   display: flex;
@@ -649,6 +649,8 @@ img {
   margin-bottom: 20px;
 }
 .input {
+  width: 358px;
+  height: 50px;
   display: flex;
   padding-left: 16px;
   padding-top: 15px;
@@ -657,6 +659,7 @@ img {
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
   background-color: var(--footer-background-color);
+  margin-right: 10px;
 }
 .label-btn {
   display: flex;
@@ -671,8 +674,8 @@ img {
   line-height: 1.87;
   letter-spacing: 0.06em;
   color: var(--nav-text-color);
-  margin-top: 35px;
-  margin-left: 15px;
+  /* margin-top: 35px;
+  margin-left: 15px; */
 }
 .label-btn-svg {
   margin-left: 10px;
