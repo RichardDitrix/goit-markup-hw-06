@@ -634,6 +634,7 @@ img {
 }
 /*  footer-label-email */
 .footer-email {
+  width: 570px;
   display: flex;
   align-items: end;
   margin-left: 93px;
