@@ -466,12 +466,26 @@
 				 </svg>
 			 </button>
 		  </form>
-</div> 
+		</div> 
 
     </footer>
 	 <div class="backdrop is-hidden" data-modal>
 		 <div class="modal ">
-			<button  class="modal-svg-link modal-button" data-modal-close>
+			 <p class="modal-paragraph">Оставьте свои данные, мы вам перезвоним</p>
+			 <form class="modal-form">
+				 <label class="modal-label"><span class="modal-text">Имя</span><input type="text" class="modal-input"></label>
+				 <label class="modal-label"><span class="modal-text">Телефон</span><input type="tel" class="modal-input"></label>
+				 <label class="modal-label"><span class="modal-text">Почта</span><input type="email" class="modal-input"></label>
+				 <label class="modal-label">Комментарий
+					 <textarea name="text" id="text"  rows="7" placeholder="Введите текст" class="textarea"></textarea>
+				</label>
+				<label class="modal-label-checkbox"><input type="checkbox" class="input-checkbox" value="license-agreed">Соглашаюсь с рассылкой и принимаю <a href="#" class="checkbox-link">Условия договора</a></label>
+				<button type="submit" class="modal-label-btn" >
+					Отправить 
+				 </button>
+			 </form>
+			 
+			<button  class="modal-svg-link " data-modal-close>
 				<svg class="modal-close-link" width="11" height="11">
 			  <use href="./images/symbol-defs.svg#icon-xmark"></use>
 			</svg>
