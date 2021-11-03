@@ -806,6 +806,7 @@ img {
   letter-spacing: 0.06em;
   color: var(--nav-text-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border: none;
   border-radius: 4px;
   cursor: pointer;
 }
