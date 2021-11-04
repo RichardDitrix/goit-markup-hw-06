@@ -656,10 +656,11 @@ img {
   padding-left: 16px;
   padding-top: 15px;
   padding-bottom: 15px;
-  padding-right: 295px;
+  padding-right: 5px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
   background-color: var(--footer-background-color);
+  color:var(--contacts-color);
 }
 .label-btn {
   display: flex;
@@ -676,6 +677,7 @@ img {
   color: var(--nav-text-color);
   margin-left: 10px;
   cursor: pointer;
+  bordrer: none:
 }
 .label-btn-svg {
   margin-left: 10px;
@@ -745,9 +747,7 @@ img {
   margin-top: 10px;
   margin-bottom: 4px;
 }
-.modal-text:first-child {
-  margin-top: 0;
-}
+
 .modal-input {
   width: 100%;
   height: 48px;
@@ -777,6 +777,7 @@ img {
   border-radius: 4px;
   padding: 12px 16px;
   margin-bottom: 20px;
+
 }
 .modal-label-checkbox {
   font-size: 14px;
