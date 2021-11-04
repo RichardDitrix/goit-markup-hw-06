@@ -744,6 +744,20 @@ img {
   letter-spacing: 0.01em;
   color: var(--secondary-text-color);
 }
+.modal-input-svg {
+	position: relative;
+}
+.svg-form {
+	position: absolute;
+	top: 50%;
+	transform: translateY( -50% );
+	left: 15px;
+}
+.modal-input-svg:hover .svg-form,
+.modal-input-svg:focus .svg-form {
+	fill: var(--accent-color);
+}
+
 .modal-text {
   display: block;
   margin-top: 10px;
@@ -759,7 +773,13 @@ img {
   padding-left: 42px;
   padding-top: 12px;
   padding-bottom: 12px;
+ 
 }
+.modal-input:hover,
+.modal-input:focus {
+	border-color:var(--accent-color);
+}
+
 
 ::placeholder {
   font-family: Roboto;
