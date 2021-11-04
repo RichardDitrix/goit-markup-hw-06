@@ -827,6 +827,11 @@ img {
 	background-position: center;
 	background-repeat: no-repeat;
 }
+.input-checkbox:focus + .check-box,
+.input-checkbox:hover + .check-box
+ {
+	background-image: url(../images/hf-checkbox.svg);
+}
 /* checked */
 .input-checkbox:checked + .check-box{
 	background-color: var(--accent-color);
