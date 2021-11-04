@@ -809,7 +809,6 @@ img {
 .input-checkbox {
   position: absolute;
   -webkit-appearance: none;
-  margin-left: 7px;
 }
 .check-box {
   position: absolute;
@@ -831,6 +830,9 @@ img {
 }
 .checkbox-link {
   color: var(--web-color);
+}
+.span-modal {
+  margin-left: 7px;
 }
 .modal-label-btn {
   display: block;
