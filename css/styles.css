@@ -15,7 +15,7 @@
   --border-color: #ececec;
   --buttons-background-color: #f5f4fa;
   --section-background-color: #2f303a;
-  --btn-spec-color: #1127f3;
+  --btn-spec-color: #1d94f5;
   --img-background-color: #f5f4fa;
   --footer-link-color: rgba(255, 255, 255, 0.6);
   --background-overlay-background: rgba(33, 150, 243, 0.9);
@@ -95,6 +95,7 @@ img {
   color: var(--nav-text-color);
   display: block;
   margin: 0 auto;
+  border: none;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .btn-services:hover,
@@ -660,7 +661,7 @@ img {
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
   background-color: var(--footer-background-color);
-  color:var(--contacts-color);
+  color: var(--contacts-color);
 }
 .label-btn {
   display: flex;
@@ -677,7 +678,7 @@ img {
   color: var(--nav-text-color);
   margin-left: 10px;
   cursor: pointer;
-  bordrer: none:
+  border: none;
 }
 .label-btn-svg {
   margin-left: 10px;
@@ -689,7 +690,7 @@ img {
 }
 
 .footer-items:not(:last-child) {
-  margin-bottom: 10px;
+  margin-bottom: 6px;
 }
 /* backdrop+modalwindow */
 .backdrop {
@@ -717,11 +718,9 @@ img {
   left: 50%;
   width: 530px;
   min-height: 580px;
-  padding-bottom:45px;
   background-color: var(--contacts-color);
   transform: translate(-50%, -50%) scale(1);
   transition: transform 3s cubic-bezier(0.4, 0, 0.2, 1);
- 
 }
 .modal-paragraph {
   margin-top: 35px;
@@ -735,8 +734,8 @@ img {
 }
 .modal-form {
   width: 448px;
-  min-height: 342px;
-  margin: 0 auto;
+  height: 342px;
+  padding-left: 35px;
 }
 .modal-label {
   font-size: 12px;
@@ -745,14 +744,14 @@ img {
   color: var(--secondary-text-color);
 }
 .modal-input-svg {
-	position: relative;
+  position: relative;
 }
 .svg-form {
-	position: absolute;
-	top: 50%;
-	transform: translateY( -50% );
-	left: 15px;
-	transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 15px;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-text {
@@ -763,7 +762,7 @@ img {
 
 .modal-input {
   width: 100%;
-  height: 48px;
+  height: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   cursor: pointer;
@@ -772,16 +771,15 @@ img {
   padding-bottom: 12px;
   outline: none;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
- 
 }
 .modal-input:hover,
 .modal-input:focus {
-	border-color:var(--accent-color);
+  border-color: var(--accent-color);
 }
-.modal-input:hover + .svg-form, .modal-input:focus + .svg-form {
-	fill: var(--accent-color);
+.modal-input:hover + .svg-form,
+.modal-input:focus + .svg-form {
+  fill: var(--accent-color);
 }
-
 
 ::placeholder {
   font-family: Roboto;
@@ -801,7 +799,6 @@ img {
   border-radius: 4px;
   padding: 12px 16px;
   margin-bottom: 20px;
-
 }
 .checkbox {
   font-size: 14px;
@@ -814,28 +811,27 @@ img {
   margin-bottom: 30px;
 }
 .input-checkbox {
-	position: absolute;
-	-webkit-appearance: none;
+  position: absolute;
+  -webkit-appearance: none;
   margin-left: 7px;
 }
-.check-box{
-	position: absolute;
-	width: 16px;
-	height: 15px;
-	left: 54px;
-	background-image: url(../images/checkbox.svg);
-	background-position: center;
-	background-repeat: no-repeat;
+.check-box {
+  position: absolute;
+  width: 16px;
+  height: 15px;
+  left: 54px;
+  background-image: url(../images/checkbox.svg);
+  background-position: center;
+  background-repeat: no-repeat;
 }
 .input-checkbox:focus + .check-box,
-.input-checkbox:hover + .check-box
- {
-	background-image: url(../images/hf-checkbox.svg);
+.input-checkbox:hover + .check-box {
+  background-image: url(../images/hf-checkbox.svg);
 }
 /* checked */
-.input-checkbox:checked + .check-box{
-	background-color: var(--accent-color);
-	background-image: url(../images/checked.svg);
+.input-checkbox:checked + .check-box {
+  background-color: var(--accent-color);
+  background-image: url(../images/checked.svg);
 }
 .checkbox-link {
   color: var(--web-color);
@@ -871,8 +867,7 @@ img {
   right: 8px;
 }
 .modal-close-link {
-	transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-svg-link:hover .modal-close-link,
 .modal-svg-link:focus .modal-close-link {
