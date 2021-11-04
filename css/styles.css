@@ -716,10 +716,12 @@ img {
   top: 50%;
   left: 50%;
   width: 530px;
-  height: 580px;
+  min-height: 580px;
+  padding-bottom:45px;
   background-color: var(--contacts-color);
   transform: translate(-50%, -50%) scale(1);
   transition: transform 3s cubic-bezier(0.4, 0, 0.2, 1);
+ 
 }
 .modal-paragraph {
   margin-top: 35px;
