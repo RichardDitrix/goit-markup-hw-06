@@ -63,8 +63,7 @@ img {
 	max-width: 428px;
 	padding-left: 16px;
 	padding-right: 16px;
-	margin-left: auto;
-	margin-right: auto;
+	margin: 0 auto;
  }
  
  @media screen and (min-width: 768px) {
@@ -78,7 +77,7 @@ img {
 	  max-width: 1158px;
 	  padding-left: 15px;
 	  padding-right: 15px;
-	  margin: 0 auto;
+	  
 	}
  }
 .backdrop {
@@ -250,6 +249,9 @@ text-decoration: none;
 }
 .area {
 	margin-bottom: 16px;
+}
+.divcheckbox {
+	margin-bottom: 24px;
 }
 .modal-label {
 	display: block;
@@ -458,14 +460,21 @@ fill: var(--primary-blue);
 		.footer-social-item .svg-link:focus {
 			background-color: #31D0AA;
 			}
-			.footer__form {
-				margin-left: 80px;
-				
+			@media screen and (min-width: 1158px) {
+				.footer__form {
+					margin-left: 80px;
+				}
 			}
 			.footer__email {
-				width: 453px;
-				display: flex;
-				gap: 24px;
+				width: 398px;
+				
+			}
+			@media screen and (min-width: 768px) {
+				.footer__email {
+					width: 453px;
+					display: flex;
+					gap: 24px;
+				}
 			}
 			.footer__label {
 				font-size: 16px;
@@ -475,27 +484,31 @@ fill: var(--primary-blue);
 				color: var(--white-background);
 				margin-bottom: 16px;
 			}
-			.divcheckbox {
-				margin-bottom: 24px;
-			}
+			
 			.input {
-				width: 264px;
+				max-width: 398px;
 				height: 40px;
-				display: flex;
 				padding-left: 16px;
 				border: 1px solid var(--white-background);
 				border-radius: 4px;
 				background-color: transparent;
 				font-size: 12px;
-				line-height: 1.5;
+				line-height: 2;
 				letter-spacing: 0.04em;	
 				color: var(--white-background);
 				filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+				margin-bottom: 16px;
+		
+			}
+			@media screen and (min-width: 768px) {
+				.input {
+				display: flex;
+				width: 264px;
+				line-height: 1.5;
+				}
 			}
 			.label-btn {
-				display: flex;
-				justify-content: center;
-				align-items: center;
+				display: block;
 				border-radius: 4px;
 				min-width: 165px;
 				height: 40px;
@@ -506,11 +519,19 @@ fill: var(--primary-blue);
 				line-height: 1.5;
 				letter-spacing: 0.04em;
 				color: var(--white-background);
-				margin-left: 24px;
+				
 				cursor: pointer;
 				border: none;
 				transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 				transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+			}
+			@media screen and (min-width: 768px) {
+				.label-btn {
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					margin-left: 24px;
+				}
 			}
 			.label-btn-svg {
 				margin-left: 16px;
