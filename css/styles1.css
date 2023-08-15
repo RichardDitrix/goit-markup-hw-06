@@ -614,6 +614,121 @@ color: var(--overlay-dark);
   bottom: -1px;
 }
 	/* === BODY === */
+	/* === HEERO === */
+	.heero {
+	padding: 112px 0;
+	margin: 0 auto;
+	display: flex;
+	max-width: 767px;
+	border-color: rgba(46, 47, 66, 0.70);
+	background-image: linear-gradient(
+      rgba(46, 47, 66, 0.70),
+      rgba(46, 47, 66, 0.70)
+    ),
+url(../images/heero-mobile-1x.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	}
+	@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+		.heero {
+		background-image: linear-gradient(
+      rgba(46, 47, 66, 0.70),
+      rgba(46, 47, 66, 0.70)),
+		url(../images/heero-mobile-2x.jpg);
+		 }
+
+	}
+	@media screen and (min-width:768px) {
+		.heero {
+			max-width: 1157px;
+			background-image: linear-gradient(
+				rgba(46, 47, 66, 0.70),
+				rgba(46, 47, 66, 0.70)
+			 ),
+		url(../images/heero-tablet-1x.jpg);
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: center;
+		}
+	}
+	@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+		.heero {
+			background-image: linear-gradient(
+			rgba(46, 47, 66, 0.70),
+			rgba(46, 47, 66, 0.70)),
+			url(../images/heero-tablet-2x.jpg);
+			 }
+	}
+	@media screen and (min-width:1158px) {
+		.heero {
+			max-width: 100%;
+			background-image: linear-gradient(
+      rgba(46, 47, 66, 0.70),
+      rgba(46, 47, 66, 0.70)
+    ),
+url(../images/heero-pc-1x.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+		}
+	}
+	@media screen and (min-width: 1158px) and (min-device-pixel-ratio: 2), screen and (min-width: 1158px) and (min-resolution: 192dpi), screen and (min-width: 1158px) and (min-resolution: 2dppx) {
+		.heero {
+			background-image: linear-gradient(
+			rgba(46, 47, 66, 0.70),
+			rgba(46, 47, 66, 0.70)),
+			url(../images/heero-pc-2x.jpg);
+			 }
+	}
+	.heero-text {
+		color: var(--white-background);
+		text-align: center;
+		font-size: 36px;
+		font-weight: 700;
+		line-height: 1.11;
+		letter-spacing: 0.02em;
+		max-width: 320px;
+		margin-top: 0;
+		margin-bottom: 72px;
+		margin-left: auto;
+		margin-right: auto
+	}
+	@media screen and (min-width:768px) {
+		.heero-text {
+		font-size: 56px;
+		line-height: 1.07;
+		letter-spacing: 0.02em;
+		max-width: 496px;
+		margin-top: 0;
+		margin-bottom: 36px;
+		}
+		
+	}
+	.btn-heero {
+		background-color: var(--primary-blue);
+		color: var(--white-background);
+		font-family: "Roboto", sans-serif;
+		font-size: 16px;
+		font-weight: 500;
+		line-height: 1.5;
+		letter-spacing: 0.04em;
+		cursor: pointer;
+		padding: 16px 32px;
+		border-radius: 4px;
+		box-shadow: 0px 4px 4px 0px var(--btn-color);
+		display: block;
+		margin: 0 auto;
+		min-width: 169px;
+		height: 56px;
+		border: none;
+		transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+		
+	}
+	.btn-heero:hover,
+	.btn-heero:focus {
+		background-color: var(--pressed-blue);
+	}
 		/* === FOOTER === */
 		.footer {
 		background-color: #2E2F42;
