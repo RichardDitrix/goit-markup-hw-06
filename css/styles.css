@@ -262,42 +262,6 @@ background-position: center;
 .btn-heero:focus {
 	background-color: var(--pressed-blue);
 }
-.description {
-	background-color: var(--white-background);
-}
-.rules-main-list {
-	display: flex;
-	gap: 24px;
-	margin: 0 auto;
-}
-.rules-list {
-	width: calc((100% - 3*24px)/4);
-}
-.rules-list-svg {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	background-color: var(--background-lite);
-	width: 264px;
-	height: 112px;
-	border-radius: 4px;
-	margin-bottom: 8px;
-}
-
-.description-main {
-color: var(--overlay-dark);
-font-size: 20px;
-font-weight: 500;
-line-height: 1.2;
-letter-spacing: 0.02em;
-margin-bottom: 8px;
-}
-.description-secondary {
-line-height: 1.5;
-letter-spacing: 0.02em;
-text-shadow: 0px 4px 4px 0px var(--text-shadow);
-
-}
 .presentation {
 	padding-top: 0;
 	color: var(--hero-background);

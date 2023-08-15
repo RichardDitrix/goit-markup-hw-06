@@ -729,6 +729,82 @@ url(../images/heero-pc-1x.jpg);
 	.btn-heero:focus {
 		background-color: var(--pressed-blue);
 	}
+	/* === DESCRIPTION === */
+	.description {
+		background-color: var(--white-background);
+		padding: 96px 0;
+	}
+	.rules-main-list {
+		margin: 0 auto;
+	}
+	@media screen and (min-width:768px) {
+		.rules-main-list {
+			display: flex;
+			gap: 24px;
+		}
+		
+	}
+	.rules-list:not(:last-child) {
+		margin-bottom: 72px;
+	}
+	@media screen and (min-width:768px) {
+	.rules-list {
+		width: calc((100% - 3*24px)/4);
+	}
+}
+	.rules-list-svg {
+		background-color: var(--background-lite);
+		width: 264px;
+		height: 112px;
+		border-radius: 4px;
+		margin-bottom: 8px;
+		display: none;
+	}
+	@media screen and (min-width:768px) {
+		.rules-list-svg {
+		justify-content: center;
+		align-items: center;
+		}
+		
+	}
+	@media screen and (min-width:1158px) {
+		.rules-list-svg {
+			display: flex;
+		}
+		
+	}
+	.description-main {
+		color: var(--overlay-dark);
+		font-size: 36px;
+		font-weight: 700;
+		line-height: 1.11;
+		letter-spacing: 0.02em;
+		margin-bottom: 8px;
+		text-align: center;
+		}
+	@media screen and (min-width:1158px ) {
+		.description-main {
+			font-size: 20px;
+			font-weight: 500;
+			line-height: 1.2;
+			letter-spacing: 0.02em;
+			margin-bottom: 8px;
+		}
+		
+	}
+		.description-secondary {
+		font-size: 16px;
+		font-weight: 500;
+		line-height: 1.5;
+		letter-spacing: 0.02em;
+		text-shadow: 0px 4px 4px 0px var(--text-shadow);
+		}
+		@media screen and (min-width:1158px) {
+			.description-secondary	{
+		font-weight: 400;
+			}
+			
+		}
 		/* === FOOTER === */
 		.footer {
 		background-color: #2E2F42;
