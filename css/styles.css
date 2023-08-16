@@ -837,12 +837,18 @@ url(../images/heero-pc-1x.jpg);
 		}
 
 		.team-mainlist {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			gap: 72px;
 		}
 		@media screen and (min-width:768px) {
 			.team-mainlist {
 				display: flex;
 				flex-wrap: wrap;
-				gap:64px 24px;
+				flex-direction: row;
+				justify-content: center;
+				gap: 64px 24px;
 			}
 		}
 		@media screen and (min-width:1158px) {
@@ -852,27 +858,13 @@ url(../images/heero-pc-1x.jpg);
 		}
 
 		.team-list {
+			max-width: max-content;
 			background-color: var(--white-background);
 			color: var(--box-shadow);
 			border-radius: 0px 0px 4px 4px;
 			box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 		}
-		.team-list:not(:last-child) {
-			
-		}
-		@media screen and (min-width:768px) {
-			.team-list {
-				width: calc(100% / 2 - 24px);
-			}
-			
-		}
-		@media screen and (min-width:1158px) {
-			.team-list {
-				width: calc((100% - 3*24px)/4);
-				margin-bottom: -72px;
-			}
-			
-		}
+
 		.container-team {
 			padding: 32px 0px;
 		}
@@ -914,10 +906,6 @@ url(../images/heero-pc-1x.jpg);
 		}
 	
 		/* === CUSTOMERS === */
-		.customers-container {
-			padding-left: 8px;
-			padding-right: 8px;
-		}
 		.customers {
 			text-align: center;
 			margin-bottom: 72px;
@@ -928,14 +916,13 @@ url(../images/heero-pc-1x.jpg);
 		  color: var(--hero-background);
 		}
 		.customers-list {
-		
 			display: flex;
 			flex-wrap: wrap;
 			justify-content: center;
 			gap: 72px 16px;
 			transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 			transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-			width: 100%;
+
 		}
 		@media screen and (min-width:768px) {
 			.customers-list {
@@ -949,25 +936,13 @@ url(../images/heero-pc-1x.jpg);
 			}
 		}
 		.customers-item {
-			flex-basis: calc(100% / 2 - 16px);
-			height: 88px;
-			background-position: center;
-			background-repeat: no-repeat;
-			background-size: 110px 56px;
-		
+		width: 198px;
+		height: 88px;
 		}
 		@media screen and (min-width:768px) {
 			.customers-item {
-				flex-basis: calc(100% / 3 - 78px);
-				background-size: 104px 56px;
-			}
-			
-		}
-		@media screen and (min-width:1158px) {
-			.customers-item {
-				background-size: 104px 56px;
-			}
-			
+				width: 168px;
+			}	
 		}
 		.customers-link-svg {
 			width: 100%;
@@ -1129,10 +1104,6 @@ url(../images/heero-pc-1x.jpg);
 					margin-left: 80px;
 				}
 			}
-			
-			.footer__email {
-				width: 398px;
-			}
 			@media screen and (min-width: 768px)  {
 				.footer__email {
 					width: 100%;
@@ -1203,16 +1174,6 @@ url(../images/heero-pc-1x.jpg);
 			}
 			@media screen and (min-width: 768px) {
 				.label-btn {
-					display: flex;
-					justify-content: center;
-					align-items: center;
-				}
-			}
-			@media screen and (min-width: 1158px) {
-				.label-btn {
-					display: flex;
-					justify-content: center;
-					align-items: center;
 					margin-left: 24px;
 				}
 			}
